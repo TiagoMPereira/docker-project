@@ -1,0 +1,6 @@
+Subir imagem do mysql
+docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=senha -p 3306:3306 -v mysqlVolume:/var/lib/mysql -d mysql:latest
+
+
+Subir o schema sql para o container
+docker exec -i id_do_container mysql -u root -psenha <./schema.sql
